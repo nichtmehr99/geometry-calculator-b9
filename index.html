@@ -34,18 +34,18 @@
               <p>Area(A)= 0.5 X b X h</p>
               <div class="flex gap-4">
                 <!-- triangle base -->
-                <input type="text" id="" class="bg-gray-200 text-xl w-24" placeholder="Base">
+                <input type="text" id="triangle-base" class="bg-gray-200 text-xl w-24" placeholder="Base">
                 <span>cm</span>
                 <!-- triangle height -->
-                <input type="text" id="" class="bg-gray-200 text-xl w-24" placeholder="height">
+                <input type="text" id="triangle-height" class="bg-gray-200 text-xl w-24" placeholder="height">
                 <span>cm</span>
               </div>
               <div class="flex">
                 <p>Area: </p>
-                <span>0</span> <span>cm<sup>2</sup></span>
+                <span id="area-text">0</span> <span>cm<sup>2</sup></span>
               </div>
               <div class="card-actions">
-                <button class="btn btn-primary w-full">Calculate</button>
+                <button onclick="calculateTriangleArea()" class="btn btn-primary w-full">Calculate</button>
               </div>
             </div>
           </div>
@@ -125,5 +125,6 @@
       </div>
     </main>
     <footer></footer>
+    <script src="scripts/triangle-calculator.js"></script>
   </body>
 </html>

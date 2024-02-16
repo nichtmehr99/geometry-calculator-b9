@@ -100,20 +100,43 @@
               </div>
             </div>
           </div>
-          <!-- triangle -->
+          <!-- Parallelogram -->
           <div class="card w-96 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
-              <img
-                src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-                alt="Shoes"
-                class="rounded-xl"
-              />
+              <img src="images/parallelogram.png" alt="Shoes" class="rounded-xl" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Shoes!</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
+              <h2 class="card-title">Parallelogram</h2>
+              <p>Area(A)= b X h</p>
+              <div class="flex gap-4">
+                <!-- Parallelogram base -->
+                <input
+                  type="text"
+                  id="parallelogram-base"
+                  class="bg-gray-200 text-xl w-24"
+                  placeholder="Base"
+                />
+                <span>cm</span>
+                <!-- parallelogram height -->
+                <input
+                  type="text"
+                  id="parallelogram-height"
+                  class="bg-gray-200 text-xl w-24"
+                  placeholder="height"
+                />
+                <span>cm</span>
+              </div>
+              <div class="flex">
+                <p>Area:</p>
+                <span id="area-text">0</span> <span>cm<sup>2</sup></span>
+              </div>
               <div class="card-actions">
-                <button class="btn btn-primary">Buy Now</button>
+                <button
+                  onclick="calculateParallelogramArea()"
+                  class="btn btn-primary w-full"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
@@ -161,5 +184,6 @@
     <footer></footer>
     <script src="scripts/triangle-calculator.js"></script>
     <script src="scripts/rectangle-calculator.js"></script>
+    <script src="scripts/parallelogram-calculator.js"></script>
   </body>
 </html>
